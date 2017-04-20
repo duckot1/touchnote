@@ -7,6 +7,8 @@
     <title>Touchnote</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/app.js" charset="utf-8"></script>
   </head>
   <body>
     <nav class="navbar navbar-static-top">
@@ -19,12 +21,33 @@
     <main>
       <div class="container title">
         <div class="row">
-          <div class="col-md-6 vcenter">
+          <div class="col-md-6">
             <h1>Title (small copy)</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
-            <button type="button" class="btn btn-danger">CTA</button>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">CTA</button>
+
+            <!-- my pop up -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Subscribe!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pop up code over -->
+
           </div>
-          <div class="col-md-6 vcenter">
+          <div class="col-md-6">
             <img src="./images/photos.png" alt="photos">
           </div>
         </div>
@@ -36,38 +59,45 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div id="one" class="product col-lg-3 col-md-6 col-sm-6">
             <div class="product-image-container">
               <img class="image-one" src="./images/product1.png" alt="product1">
             </div>
-            <h3>Info 01</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="product-info-one hide">
+              <h3>Info 01</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div id="two" class="product col-lg-3 col-md-6 col-sm-6">
             <div class="product-image-container">
               <img class="image-two" src="./images/product2.png" alt="product2">
             </div>
-            <h3>Info 02</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="product-info-two hide">
+              <h3>Info 02</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div id="three" class="product col-lg-3 col-md-6 col-sm-6">
             <div class="product-image-container">
               <img class="image-three" src="./images/product3.png" alt="product3">
             </div>
-            <h3>Info 03</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="product-info-three hide">
+              <h3>Info 03</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div id="four" class="product col-lg-3 col-md-6 col-sm-6">
             <div class="product-image-container">
               <img class="image-four" src="./images/product4.png" alt="product4">
             </div>
-            <h3>Info 04</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="product-info-four hide">
+              <h3>Info 04</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
