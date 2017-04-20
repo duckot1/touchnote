@@ -1,0 +1,39 @@
+.title {
+  background-image: url("../images/background.png");
+  width: 100%;
+
+  .row {
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn {
+    width: 82%;
+    height: 50px;
+    background-color: $btn-colour;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+
+  img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    color: white;
+    margin-bottom: 35px;
+    font-family: $font;
+  }
+
+  p {
+    color: white;
+    font-size: 17px;
+    padding-right: 70px;
+    margin-bottom: 40px;
+    font-family: $font;
+  }
+
+}

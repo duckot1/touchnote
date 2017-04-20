@@ -1,0 +1,49 @@
+.products {
+  background: white;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+
+  h3 {
+    color: $primary-colour;
+    font-family: $font;
+  }
+
+  h1 {
+    color: $primary-colour;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: $font;
+  }
+
+}
+
+.product-image-container {
+  width:265px;
+  height:225px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+
+  > .image-one {
+    position: absolute;
+    top: -35px;
+    left: -34px;
+  }
+  > .image-two {
+    position: absolute;
+    top: -3px;
+    left: -5px;
+  }
+  > .image-three {
+    position: absolute;
+    top: -20px;
+    left: -1px;
+  }
+  > .image-four {
+    position: absolute;
+    top: -30px;
+    left: -10px;
+  }
+}

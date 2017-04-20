@@ -1,0 +1,77 @@
+.title {
+  background-image: url("../images/background.png");
+  width: 100%; }
+  .title .row {
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    align-items: center; }
+  .title .btn {
+    width: 82%;
+    height: 50px;
+    background-color: #de013f;
+    border-radius: 10px;
+    font-size: 17px; }
+  .title img {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .title h1 {
+    color: white;
+    margin-bottom: 35px;
+    font-family: "Verdana"; }
+  .title p {
+    color: white;
+    font-size: 17px;
+    padding-right: 70px;
+    margin-bottom: 40px;
+    font-family: "Verdana"; }
+
+.navbar {
+  background-color: white;
+  margin: 0; }
+
+.products {
+  background: white;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%; }
+  .products h3 {
+    color: #00b7ff;
+    font-family: "Verdana"; }
+  .products h1 {
+    color: #00b7ff;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: "Verdana"; }
+
+.product-image-container {
+  width: 265px;
+  height: 225px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative; }
+  .product-image-container > .image-one {
+    position: absolute;
+    top: -35px;
+    left: -34px; }
+  .product-image-container > .image-two {
+    position: absolute;
+    top: -3px;
+    left: -5px; }
+  .product-image-container > .image-three {
+    position: absolute;
+    top: -20px;
+    left: -1px; }
+  .product-image-container > .image-four {
+    position: absolute;
+    top: -30px;
+    left: -10px; }
+
+main {
+  width: 100%; }
+
+.row {
+  margin: auto; }
+
+/*# sourceMappingURL=style.css.map */
